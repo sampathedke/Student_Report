@@ -1,11 +1,13 @@
 use std::io;
 use genpdf::{elements};
-
+ 
 fn main() {
-    let mut stu_name=String::new();
-    let mut total_marks=String::new();
-    let mut no_of_subjects=String::new();
-
+    // Variables to store user input as strings
+    
+    let mut stu_name=String::new(); 
+    let mut total_marks=String::new();  
+    let mut no_of_subjects=String::new(); 
+ 
 
     println!("Enter the Student Name");
         io::stdin()
@@ -61,10 +63,12 @@ fn main() {
         doc.render_to_file("Student_Report.pdf").expect("Failed to write PDF file");
 }
 
+//Function to calculate average marks
 fn calculate_average(total_marks: f32, no_of_subjects: u32) -> f32 {
     total_marks / no_of_subjects as f32
 }
 
+// Function to assign grade based on average marks
 fn get_grade(avge:f32)->char{
     if avge>=90.0{
         'A'
