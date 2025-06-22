@@ -1,4 +1,4 @@
-📘 Student Report Card Generator (Rust)
+#📘 Student Report Card Generator (Rust)
 
 A simple Rust-based console application that:
 
@@ -29,8 +29,7 @@ A simple Rust-based console application that:
 
 ## How to Run
 
-## 1. Clone the repository
-
+##1.Clone the Repository
 ```bash
 git clone https://github.com/your-username/student-report-rust.git
 cd student-report-rust
